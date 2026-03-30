@@ -1,0 +1,64 @@
+/* Estilos Gerais */
+body {
+    background-color: #f4f1ea;
+    color: #3e362e;
+}
+
+/* Gráficos Responsivos */
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+    max-height: 400px;
+}
+
+@media (min-width: 768px) {
+    .chart-container {
+        height: 400px;
+    }
+}
+
+/* Animações */
+.fade-in {
+    animation: fadeIn 0.4s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* UI de Navegação */
+.nav-btn.active {
+    background-color: #3e362e !important;
+    color: #f4f1ea !important;
+    border-left: 4px solid #6b705c;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f4f1ea;
+}
+::-webkit-scrollbar-thumb {
+    background: #8c7a6b;
+    border-radius: 4px;
+}
+
+/* Loader */
+.spinner {
+    border: 3px solid rgba(62, 54, 46, 0.1);
+    border-left-color: #6b705c;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
